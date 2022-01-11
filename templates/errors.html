@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/media/errors.css">
+    <link rel="shortcut icon" type="image/png" href="https://faviconka.ru/ico/1/faviconka.ru_1_105549.ico"/>
+    <title>Document</title>
+</head>
+<body>
+    {{if eq . 400}}
+    <p>Bad Request</p>
+    <div class="back"> <button onclick="window.location.href = '/';" class = "btn-back" >Back</button></div>
+    {{else if eq . 0}}
+    <p>Sorry, no results were found for your search</p>
+    <div class="back"> <button onclick="window.location.href = '/';" class = "btn-back" >Back</button></div>
+    {{else if eq . 404}}
+    <p>Not Found</p>
+    <div class="back"> <button onclick="window.location.href = '/';" class = "btn-back" >Back</button></div>
+    {{else if eq . 405}}
+    <p>Method not Allowed</p>
+    <div class="back"> <button onclick="window.location.href = '/';" class = "btn-back" >Back</button></div>
+    {{else if eq . 500}}
+    <p>Internal Server Error</p>
+    <div class="back"> <button onclick="window.location.href = '/';" class = "btn-back" >Back</button></div>
+    {{end}}
+</body>
+</html>

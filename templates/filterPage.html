@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/media/filterPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainBlock">
+        <div class="back"> <button onclick="window.location.href = '/';" class = "btn-new" >Back</button></div>
+        {{ if not .Art }}
+            <h1 style="color:white".>no results were found for your searc</h1>
+        {{ end }}
+        {{range .Art}}
+        <div class="Icon">
+            <a href="../artists/{{.ID}}"><img src="{{.Image}}" alt=""></a>
+            <p>{{.Name}}</p>
+        </div>
+        {{end}}
+    </div>  
+</body>
+</html>

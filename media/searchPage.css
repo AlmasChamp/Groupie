@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Yellowtail&display=swap');
+
+.mainBlock {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: black;
+    width: 100%;
+    height:1025px;
+}
+
+.Icon {
+    background:linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    width: 269px;
+    height: 275px;
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    padding: 5px ;
+    border: 1px solid rgb(69, 63, 75);
+    border-radius: 15px 
+}
+
+.back {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    margin-left: -25px;
+}
+.btn-back {
+    color:black;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.Icon:hover {
+    box-shadow: inset 0 0 0 60px #bdddec;
+}
+
+p{
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    font-family: 'Yellowtail', cursive;
+}
+
+img{
+    border-radius: 15px
+}
+
+@media (max-width: 1154px){
+    .mainBlock {
+        justify-content: center;
+        display: grid;
+        flex-wrap: wrap; 
+        background-color: black;
+        width: 100%;
+        height:1366px;
+    }
+    
+    .Icon {
+        background:linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+        width: 269px;
+        height: 275px;
+        display: inline-block;
+        text-align: center;
+        margin: 2px;
+        padding: 5px ;
+        border: 1px solid rgb(69, 63, 75);
+        border-radius: 15px 
+    }
+    
+    .Icon:hover {
+        box-shadow: inset 0 0 0 60px #bdddec;
+    }
+    
+    p{
+        margin: 5px;
+        font-size: 20px;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+    
+    img{
+        border-radius: 15px
+    }
+}
+

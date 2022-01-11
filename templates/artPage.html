@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
+    <link rel="stylesheet" href="/media/artPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainBlock">
+        <div class="L">
+            <img src="{{.A.Image}}" alt="">
+            <p class = "pName">{{.A.Name}}</p>
+            <div class="back"> <button onclick="window.location.href = '/';" class = "btn-back" >Back</button></div>
+        </div>
+        <div class="R">
+            <p  class = "p">Members :</p>
+            {{range .A.Members}}
+            <p>{{.}}</p>
+            {{end}}
+            <p  class = "p">CreationDate :</p>
+            <p>{{.A.CreationDate}}</p>
+            <p  class = "p">FirstAlbum :</p>
+            <p>{{.A.FirstAlbum}}</p>
+            <p  class = "p">DatesLocations:</p>
+            {{ range $key, $value := .R.DatesLocations }}
+            <ul>
+                <strong  class = "pDl">{{ $key }}:</strong>
+                {{ range $value }}
+                <li> {{ . }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1?apikey=fe373261-157a-4626-8477-941ffec8090e&load=package.full&lang=ru_RU"></script>
+   
+
+    // Формирование div-контейнер карты.
+    <div id="YMapsID" style="width: 450px; height: 350px;">
+    </div>
+
+    <script src="/js/geoloc.js"></script>
+</body>
+</html>

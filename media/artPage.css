@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Yellowtail&display=swap');
+
+.mainBlock {
+    justify-content: center;
+    display: block;
+    /* flex-wrap: wrap; */
+    background-color: black;
+    /* background:
+    linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%); */
+}
+
+.R {
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+    width: 800px;
+    height: 1045px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    border: 2px solid rgb(69, 63, 75);
+    border-radius: 15px 
+}
+
+.L {
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+    width: 800px;
+    height: 300px;
+    display: flex;
+    /* justify-content: center;  */
+    margin: auto;
+    padding: auto ;
+    border: 2px solid rgb(69, 63, 75);
+    border-radius: 15px 
+}
+
+.pName{
+    /* height: 100px; */
+    font-size: 50px;
+    padding-left: 16%;
+    padding-top: 6%;
+    /* padding-right: 26%; */
+    font-family: 'Kalam', cursive;
+    font-family: 'Yellowtail', cursive;
+}
+.back {
+    margin-left: auto;
+}
+
+@keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+}
+
+#YMapsID{
+    margin: auto;
+}
+  
+.btn-back {
+    color:black;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+  
+.btn-back:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 200px;
+    margin-left: 60px;
+    background: #fff;
+    opacity: 0.5;
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: all 0.1s;
+    animation-name: slideme;
+    animation-duration: 1.5s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.p{
+    font-size: 25px;
+    font-family: 'Kalam', cursive;
+    font-family: 'Yellowtail', cursive;
+}
+
+img{
+    border-radius: 15px
+} 
+
+@media (max-width: 825px){
+    .mainBlock {
+        justify-content: center;
+        display: block;
+        /* flex-wrap: wrap; */
+        background-color: black;
+        /* background:
+        linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%); */
+    }
+
+    .L {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        width: 700px;
+        height: 250px;
+        display: flex;
+        /* justify-content: center;  */
+        margin: auto;
+        padding: auto ;
+        border: 2px solid rgb(69, 63, 75);
+        border-radius: 15px
+    }
+
+    .R {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        width: 700px;
+        height: 1005px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 10px,10px,10px,10px ;
+        border: 2px solid rgb(69, 63, 75);
+        border-radius: 15px 
+    }
+
+    .pName{
+        /* height: 100px; */
+        font-size: 50px;
+        /* padding: 4%; */
+        padding-left: 11%;
+        padding-top: 6%;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+    
+    .p{
+        font-size: 25px;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+
+}
+
+@media (max-width: 725px){
+    .mainBlock {
+        justify-content: center;
+        display: block;
+        /* flex-wrap: wrap; */
+        background-color: black;
+        /* background:
+        linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%); */
+    }
+
+    .L {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        width: 335px;
+        height: 100px;
+        display: flex;
+        /* justify-content: center;  */
+        margin: auto;
+        padding: auto ;
+        border: 2px solid rgb(69, 63, 75);
+        border-radius: 15px
+    }
+
+    .R {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        width: 335px;
+        height: 1040px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 10px,10px,10px,10px ;
+        border: 2px solid rgb(69, 63, 75);
+        border-radius: 15px 
+    }
+
+    .pName{
+        /* height: 100px; */
+        font-size: 25px;
+        padding-left: 12%;
+        padding-top: 0%;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+    
+    .p{
+        font-size: 25px;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+
+}
+
+@media (max-width: 360px){
+    .mainBlock {
+        justify-content: center;
+        display: block;
+        /* flex-wrap: wrap; */
+        background-color: black;
+        /* background:
+        linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%); */
+    }
+    
+    .L {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        width: 300px;
+        height: 100px;
+        display: flex;
+        /* justify-content: center;  */
+        margin: auto;
+        padding: auto ;
+        border: 2px solid rgb(69, 63, 75);
+        border-radius: 15px
+    }
+    
+    .R {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        width: 300px;
+        height: 1050px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 10px,10px,10px,10px ;
+        border: 2px solid rgb(69, 63, 75);
+        border-radius: 15px 
+    }
+    
+    .pName{
+        /* height: 100px; */
+        font-size: 20px;
+        padding-left: 11%;
+        padding-top: 6%;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+    
+    .p{
+        font-size: 25px;
+        font-family: 'Kalam', cursive;
+        font-family: 'Yellowtail', cursive;
+    }
+    
+
+}
+
+
